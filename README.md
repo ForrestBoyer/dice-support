@@ -13,8 +13,8 @@ contain the app source.
 
 - [Support page](index.html) — contact information, purchase restoration, and
   purchase help.
-- [Privacy policy](privacy/index.html) — local app data, Apple purchases, support
-  correspondence, and GitHub Pages hosting.
+- [Privacy policy](privacy/index.html) — local app data, Apple purchases and
+  update checks, support correspondence, and GitHub Pages hosting.
 - [Shared styles](assets/styles.css) — responsive layout, focus indicators, and
   system light/dark appearance.
 
@@ -34,8 +34,8 @@ open http://localhost:8080/.
 
 ## Maintaining the privacy policy
 
-The policy describes Dice’s current local storage and StoreKit purchase model.
-Update it before introducing accounts, cloud sync, analytics, advertising, or
+The policy describes Dice’s current local storage, StoreKit purchases, automatic
+Apple update checks, and optional support correspondence. Update it before introducing accounts, cloud sync, analytics, advertising, or
 other information handling. Keep its revision date current when changing its
 substance. Support information is handled according to the published policy;
 the public contact address is in the HTML.
