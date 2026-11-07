@@ -27,8 +27,8 @@ contain the app source.
 
 GitHub Pages publishes the root of `main`. Edit the HTML or CSS, commit, and push
 to `main` to publish an update. `.nojekyll` keeps these static files independent
-of a site generator. There are no package dependencies, scripts, analytics,
-external fonts, or build steps.
+of a site generator. There are no package dependencies, external fonts, or build steps.
+[Website counters](assets/analytics.js) run independently of page navigation.
 
 In the repository’s Settings → Pages, the publishing source is **Deploy from a
 branch**, using `main` and `/ (root)`. See [GitHub’s publishing
@@ -39,8 +39,20 @@ open http://localhost:8080/.
 
 ## Social links and in-app browsers
 
-Use the [links page](links/index.html) URL in each social profile. Account
-destinations are ordinary HTTPS links verified against the connected Buffer
+Use the [links page](links/index.html) with the matching source in each social profile:
+
+- Instagram: `https://forrestboyer.github.io/dice-support/links/?from=instagram`
+- TikTok: `https://forrestboyer.github.io/dice-support/links/?from=tiktok`
+- Facebook: `https://forrestboyer.github.io/dice-support/links/?from=facebook`
+
+The counter sends fixed page, source, and action labels. It ignores arbitrary URL
+parameters and carries the source through internal navigation without cookies or
+browser storage. It records existing social and help links, and recognizes
+`apps.apple.com` links. A click does not establish a download. Tracking runs only
+on the published origin; blocked or failed delivery never prevents navigation.
+See the [privacy policy](privacy/index.html) for information handling.
+
+Account destinations are ordinary HTTPS links verified against the connected Buffer
 channels. The page uses same-window navigation, local assets and system fonts;
 it works without JavaScript, cookies, pop-ups or embedded social widgets.
 The host app controls whether an outgoing link stays in its browser or opens
