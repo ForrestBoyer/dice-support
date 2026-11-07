@@ -1,16 +1,21 @@
 # Dice support website
 
-Public support and privacy information for the Dice iOS app, hosted on GitHub
-Pages. The repository contains the static website and app icon; it does not
+Public social links, support and privacy information for the Dice iOS app,
+hosted on GitHub Pages. The repository contains the static website and app icon; it does not
 contain the app source.
 
-| App Store Connect field | Public URL |
+| Page | Public URL |
 | --- | --- |
+| Social profile link | https://forrestboyer.github.io/dice-support/links/ |
 | Support URL | https://forrestboyer.github.io/dice-support/ |
 | Privacy Policy URL | https://forrestboyer.github.io/dice-support/privacy/ |
 
 ## Files
 
+- [Links page](links/index.html) — the shared destination for social profile
+  bios, with verified account links and access to support and privacy.
+- [Links styles](assets/links.css) — the compact mobile layout, using the shared
+  site's light/dark colors.
 - [Support page](index.html) — contact information, purchase restoration, and
   purchase help.
 - [Privacy policy](privacy/index.html) — local app data, Apple purchases and
@@ -31,6 +36,20 @@ instructions](https://docs.github.com/en/pages/getting-started-with-github-pages
 
 For a local preview, run `python3 -m http.server 8080` from this directory and
 open http://localhost:8080/.
+
+## Social links and in-app browsers
+
+Use the [links page](links/index.html) URL in each social profile. Account
+destinations are ordinary HTTPS links verified against the connected Buffer
+channels. The page uses same-window navigation, local assets and system fonts;
+it works without JavaScript, cookies, pop-ups or embedded social widgets.
+The host app controls whether an outgoing link stays in its browser or opens
+another app; this page does not force an app handoff or redirect visitors.
+
+When changing the page, check narrow and wide layouts, light and dark mode,
+keyboard focus, enlarged text, and navigation from an actual mobile in-app
+browser. HTTP and static checks alone do not establish those visual or device
+behaviors. The existing support and privacy URLs remain stable.
 
 ## Maintaining the privacy policy
 
