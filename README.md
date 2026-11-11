@@ -45,8 +45,8 @@ Use the [links page](links/index.html) with the matching source in each social p
 - TikTok: `https://forrestboyer.github.io/dice-support/links/?from=tiktok`
 - Facebook: `https://forrestboyer.github.io/dice-support/links/?from=facebook`
 
-The app icon and prominent download button open Dice in the App Store, with
-three quieter social links grouped below. On the published site, the
+The app icon and first card open Dice in the App Store. The download card uses
+a color accent above the three matching social cards. On the published site, the
 incoming source selects Apple's campaign token: `instagram`, `tiktok`, or
 `Facebook` (case preserved). All three use app ID `6825166222` and provider token
 `129653631`. Known social referrers also select the matching campaign when no
