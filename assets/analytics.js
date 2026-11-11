@@ -45,8 +45,15 @@
     } catch { /* Navigation and privacy tools may prevent delivery. */ }
   }
 
+  const campaigns = new Map([['instagram', 'instagram'], ['tiktok', 'tiktok'], ['facebook', 'Facebook']]);
   for (const link of document.querySelectorAll('a[href]')) {
     const url = new URL(link.href, location.href);
+    if (url.hostname === 'apps.apple.com' && url.pathname === '/app/apple-store/id6825166222' && campaigns.has(source)) {
+      url.searchParams.set('pt', '129653631');
+      url.searchParams.set('ct', campaigns.get(source));
+      url.searchParams.set('mt', '8');
+      link.href = url.href;
+    }
     if (url.origin === origin && pageFor(url.pathname) && !url.hash) {
       url.searchParams.set('from', source);
       link.href = url.href;

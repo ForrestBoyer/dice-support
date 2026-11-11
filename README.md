@@ -45,6 +45,14 @@ Use the [links page](links/index.html) with the matching source in each social p
 - TikTok: `https://forrestboyer.github.io/dice-support/links/?from=tiktok`
 - Facebook: `https://forrestboyer.github.io/dice-support/links/?from=facebook`
 
+The first button downloads Dice from the App Store. On the published site, the
+incoming source selects Apple's campaign token: `instagram`, `tiktok`, or
+`Facebook` (case preserved). All three use app ID `6825166222` and provider token
+`129653631`. Known social referrers also select the matching campaign when no
+valid source parameter is present. Direct or unrecognized visits, disabled
+JavaScript, local previews, and browsers sending DNT/GPC use the plain App Store
+link. Apple reports campaign downloads separately from the website's click totals.
+
 The counter sends fixed page, source, and action labels. It ignores arbitrary URL
 parameters and carries the source through internal navigation without cookies or
 browser storage. It records existing social and help links, and recognizes
